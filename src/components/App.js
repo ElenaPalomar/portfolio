@@ -1,9 +1,13 @@
 // Components
-import Header from './Header';
+import Header from './header/Header';
 import Main from './landing/Main';
 
 // Styles
 import '../styles/App.scss';
+
+// Routes
+import { Route, Routes } from 'react-router-dom';
+
 
 function App() {
   return (
@@ -11,7 +15,37 @@ function App() {
 
       <Header />
 
-      <Main />
+      <Routes>
+
+        <Route
+          path='/'
+          element={
+            <Main />
+          }
+        />
+
+        <Route
+          path='/about'
+          element={
+            <Main />
+          }
+        />
+
+        <Route
+          path='/proyects'
+          element={
+            <Main />
+          }
+        />
+
+        <Route
+          path='/contact'
+          element={
+            <Main />
+          }
+        />
+
+      </Routes>
 
     </div>
   );
