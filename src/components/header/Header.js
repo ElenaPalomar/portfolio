@@ -1,15 +1,12 @@
-// images
-import logo from '../../images/logo.jpg'
-
 const Header = () => {
   return (
     <header className="header">
 
-      <a 
+      <a
         href="/"
         className="header__home"
         title="Return home">
-          <img src={logo} alt="Logo" />
+        <img src="" alt="Logo" />
       </a>
 
       <nav className="header__menu">
@@ -19,8 +16,8 @@ const Header = () => {
               href="/about"
               className='header__link'
               title="Go to know something about me">
-                About me
-              </a>
+              About me
+            </a>
           </li>
           <li>
             <a href="/proyects" className='header__link' title="Go to see some of my personal proyects">Personal proyects</a>
