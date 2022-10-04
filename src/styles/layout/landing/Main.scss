@@ -1,0 +1,13 @@
+@import "../../core/reset";
+@import "../../core/variables";
+@import "../../core/global";
+
+.main {
+  min-height: 100vh;
+
+  margin: 0 2.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
