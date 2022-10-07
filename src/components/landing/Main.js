@@ -1,6 +1,6 @@
-/* STYLES */
+/* Styles */
 import '../../styles/layout/landing/Main.scss'
-/* COMPONENTS */
+/* Components */
 import Logo from './Logo';
 
 

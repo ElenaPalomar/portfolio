@@ -1,0 +1,39 @@
+@import "../core/reset";
+@import "../core/variables";
+@import "../core/global";
+
+
+.particles {
+  background-color: $white;
+  border-radius: 50%;
+
+  width: 1rem;
+  height: 1rem;
+
+  position: absolute;
+
+  pointer-events: none;
+
+  &::before {
+    content: '';
+
+    background-color: $white;
+    border-radius: 50%;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    animation: moveParticles 2s linear infinite;
+  }
+}
+
+@keyframes moveParticles {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(30rem);
+  }
+}

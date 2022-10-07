@@ -1,4 +1,5 @@
 // Components
+import MouseParticles from './MouseParticles';
 import Header from './header/Header';
 import Main from './landing/Main';
 
@@ -12,6 +13,8 @@ import { Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
+
+      <MouseParticles />
 
       <Routes>
 
