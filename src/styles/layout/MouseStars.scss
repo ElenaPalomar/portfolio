@@ -1,0 +1,47 @@
+@import "../core/reset";
+@import "../core/variables";
+@import "../core/global";
+
+
+.stars {
+  position: absolute;
+
+  pointer-events: none;
+
+  filter: drop-shadow(0 0 1.5rem rgba(0, 0, 0, 0.5));
+
+  animation: fadeInOut 2s linear infinite;
+
+
+  &::before {
+    content: '';
+
+    background-image: url(../../images/star.png);
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    animation: moveStars 2s linear infinite;
+  }
+}
+
+@keyframes moveStars {
+  0% {
+    transform: translate(0) rotate(0deg);
+  }
+  100% {
+    transform: translate(30rem) rotate(360deg);
+  }
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  20%, 80% {
+    opacity: 1;
+  }
+}

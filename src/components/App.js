@@ -1,5 +1,5 @@
 // Components
-import MouseParticles from './MouseParticles';
+import MouseStars from './MouseStars';
 import Header from './header/Header';
 import Main from './landing/Main';
 
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
 
-      <MouseParticles />
+      <MouseStars />
 
       <Routes>
 
