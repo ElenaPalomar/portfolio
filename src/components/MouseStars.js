@@ -8,6 +8,8 @@ const MouseStars = () => {
 
   /* HANDLE FUNCTIONS */
   const handleMouseStars = (event) => {
+    event.preventDefault();
+
     const stars = document.createElement('span');
     stars.classList.add('stars');
     body.appendChild(stars);
@@ -33,6 +35,8 @@ const MouseStars = () => {
   /* LISTENERS */
   const mouseListener = () => document.addEventListener('mousemove', handleMouseStars);
   mouseListener();
+  const mobileTouchListener = () => document.addEventListener('touchmove', handleMouseStars);
+  mobileTouchListener();
 
 };
 

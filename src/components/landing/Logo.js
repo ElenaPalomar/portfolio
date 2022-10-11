@@ -22,8 +22,7 @@ const Logo = () => {
     <section className="cover">
       <img src={logo} alt="Logo's portfolio - Caricature of Elena" className="cover__logo" />
       <div className="cover__text">
-        <p> {circleText}
-        </p>
+        {circleText}
       </div>
     </section>
   );
